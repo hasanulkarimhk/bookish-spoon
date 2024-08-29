@@ -1,5 +1,3 @@
-
-
 function sum10() {
   let inp0Num = document.querySelector('.inp0').value;
 

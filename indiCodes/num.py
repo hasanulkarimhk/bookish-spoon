@@ -41,11 +41,37 @@ a10 = a1>4
 a11 = a1[a1>4] #Here is a thought: This operations makes think, so that, we can make a list of array then put a condition inside [] and only condition matched numbers will be selected. That's cool as fuck bro! xx.
 # [5 7]
 
-a12 = (1/a1 +2)
+a12 = (1/a1 +2) # This can be used for ploting too.
 # [2.33333333 2.2  2.14285714 2.33333333]
 
+x = np.linspace(0,10,100)
 
 
+plt.plot(x, x**2)
+
+# plt.show()
+
+y = np.arange(0,30,2)
+
+plt.plot(y, y**2)
+
+# plt.show()
+
+# As I have used lpt.show() command twice, it showed both graphs chronologically
+
+plt.hist(a4)
+plt.show()
 
 
-print(a12)
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = np.random.randn(1000)
+
+plt.hist(data, bins=10, color='red', alpha=0.7)
+plt.title("Histogram of Sample Data")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.grid(True)
+
+plt.show()

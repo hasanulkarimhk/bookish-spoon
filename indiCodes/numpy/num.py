@@ -60,11 +60,8 @@ plt.plot(y, y**2)
 # As I have used lpt.show() command twice, it showed both graphs chronologically
 
 plt.hist(a4)
-plt.show()
+# plt.show()
 
-
-import matplotlib.pyplot as plt
-import numpy as np
 
 data = np.random.randn(1000)
 
@@ -74,4 +71,41 @@ plt.xlabel("Value")
 plt.ylabel("Frequency")
 plt.grid(True)
 
-plt.show()
+# plt.show()
+
+
+
+def f(x):
+  return x**2 * np.sin(x) / np.exp(-x)
+
+x = np.linspace(0,10,100)
+
+y = f(x)
+
+plt.plot(x,y)
+
+# plt.show()
+
+
+b1 = np.array([2,4,6,8,10])
+
+print(b1[2])
+# 6
+
+print(b1[2:])
+# [ 6  8 10]
+
+print(b1[:-2])
+# [2 4 6]
+
+print(b1[1:-2])
+# [4 6]
+
+
+
+
+
+
+
+
+

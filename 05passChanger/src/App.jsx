@@ -23,8 +23,36 @@ function App() {
   }, [length,numberAllowed,charPositive, pass])
 
   return (
-    <h1 className="text-4xl text-center text-white border-spacing-4">Password Generator</h1>
+    <>
+    <div className="w-full max-w-md mx-auto shawdow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-800 justify-center">
+
+    <div className="flex shadow rounded-lg overflow-hiddden mb-4">
+
+      <input 
+      value={pass}
+      className="outline-none w-full py-1 px-3"
+      placeholder="password"
+      readOnly
+      type="text" />
+      <button className="outline-none justify-center border-spacing-3 text-wrap text-center">copy</button>
+
+
+
+
+    </div>
+    <div className="flex"></div>
+    <div className="flex"></div>
+    <input type="range" min={6} max={100} 
+    value={length} className="cursor-pointer"/>
+
+    </div>
+    </>
   )
 }
 // coding is cool af
 export default App
+
+
+
+
+// buttons only work when we use onclick in it.

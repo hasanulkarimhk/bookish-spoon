@@ -71,7 +71,7 @@ plt.xlabel("Value")
 plt.ylabel("Frequency")
 plt.grid(True)
 
-# plt.show()
+plt.show()
 
 
 
